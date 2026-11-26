@@ -7,4 +7,4 @@ node_modules/
 /.idea/modules.xml
 /.idea/pw-test.iml
 /.idea/vcs.xml
-/package-lock.json
+.DS_Store

@@ -2,13 +2,23 @@
   "name": "pw-test",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "playwright test",
+    "test:docs": "playwright test tests/docs-intro.spec.ts",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "report": "playwright show-report playwright-report/smoke",
+    "repro:trace": "node scripts/run-trace-repro.mjs retain-on-failure",
+    "repro:trace:on": "node scripts/run-trace-repro.mjs on",
+    "typecheck": "tsc --noEmit"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@playwright/test": "^1.46.1",
-    "@types/node": "^22.5.2"
+    "@playwright/test": "1.65.1",
+    "@types/node": "24.19.4",
+    "typescript": "7.0.2"
   }
 }
